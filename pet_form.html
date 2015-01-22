@@ -1,0 +1,66 @@
+<html>
+<head>
+<style type="text/css">
+form {background-color: yellow; font-size: 20}
+input{font-size: 20}
+</style>
+</head>
+ 
+<form method="get" action="pet_report.php">
+<fieldset>
+<legend>Pet Details</legend>
+<table>
+  <tr>
+    <td>Latitude:</td>
+    <td><input type="text" name="latitude" id="latitude" size="20" /></td>
+  </tr>
+  <tr>
+    <td>Longitude:</td>
+    <td><input type="text" name="longitude" id="longitude" size="20" /></td>
+  </tr>
+  <tr>
+    <td>Type of pet?</td>
+    <td>
+    <input type="radio" name="pet_type" value="dog"/> Dog
+    <input type="radio" name="pet_type" value="cat"/> Cat
+    <input type="radio" name="pet_type" value="other"/> Other
+    </td>
+  </tr>
+  <tr>
+    <td>Short Description:</td>
+    <td><input type="text" name="description" size="30" maxlength="30" /></td>
+  </tr>
+  <tr>
+    <td>Additional Information?</td>
+    <td><input type="text" name="info" size="150" maxlength="200" /></td>
+  </tr>
+  <tr>
+    <td>Contact Phone Number:</td>
+    <td><input type="text" name="phone" size="10" maxlength="10" /></td>
+  </tr>
+  <tr>
+    <td>Lost, Found, or Sighted?</td>
+    <td>
+    <input type="radio" name="status" value="lost"/> Lost
+    <input type="radio" name="status" value="found"/> Found
+    <input type="radio" name="status" value="sighted"/> Sighted
+    </td>
+  </tr>
+  <tr>
+    <td>Source?</td>
+    <td>
+    <input type="radio" name="source" value="PJStar"/> PJStar
+    <input type="radio" name="source" value="Craigslist"/> Craigslist
+    <input type="radio" name="source" value="Pekin DT"/> Pekin Daily Times
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+    <input type="submit" />
+    <input type="reset" />
+    </td>
+  </tr>
+</fieldset>
+</table>
+</form>
+</html>
